@@ -18,6 +18,7 @@ const Starred = () => {
             Promise.all(promises)
             .then(apiData => apiData.map(show => ({show})) ) 
             .then(results => {
+                console.log(results);
                 setShows(results);
                 setIsLoading(false)
             }).catch(err => {

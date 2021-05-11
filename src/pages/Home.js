@@ -13,6 +13,8 @@ const Home = () => {
 
     const isShowSearch = searchOptions==='shows';
 
+
+
     const onInputChange = (env) =>{
         SetInput(env.target.value);
     }
